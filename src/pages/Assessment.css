@@ -1,0 +1,32 @@
+.assessment-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.assessment-header h1 {
+  font-size: 2.5rem;
+  color: #1e90ff;
+}
+
+.assessment-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.ai-analyser-button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.ai-analyser-button:hover {
+  background-color: #1c86ee;
+}

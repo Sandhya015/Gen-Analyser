@@ -1,0 +1,84 @@
+/* About.css */
+
+/* General Page Layout */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6684a3;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  max-width: 800px;
+  margin-top: 50px;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #e9dfdf;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #010101;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: #0b2241;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-card h2 {
+  font-size: 1.5rem;
+  color: #f3dddd;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #ecdfdf;
+}
+
+/* Hover Effects for Feature Cards */
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.feature-card:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}

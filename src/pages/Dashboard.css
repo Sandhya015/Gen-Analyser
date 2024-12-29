@@ -1,0 +1,139 @@
+/* Root styles */
+:root {
+    --primary-blue: #2e5ed6;
+    --dark-blue: #1e293b;
+    --light-gray: #e2e8f0;
+    --text-white: #ffffff;
+    --hover-blue: #3b82f6;
+  }
+  
+  /* Dashboard Container */
+  .services-container {
+    background-color: var(--dark-blue);
+    color: var(--text-white);
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title */
+  .services-title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: var(--primary-blue);
+    border-bottom: 3px solid var(--hover-blue);
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  /* Grid Layout */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Individual Service Items */
+  .service-item {
+    background-color: var(--primary-blue);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  /* Service Item Hover Effects */
+  .service-item:hover {
+    transform: translateY(-10px);
+    background-color: var(--hover-blue);
+  }
+  
+  /* Service Image */
+  .service-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Service Headings */
+  .service-item h2 {
+    font-size: 1.5rem;
+    color: var(--text-white);
+    margin-bottom: 10px;
+  }
+  
+  /* Service Paragraphs */
+  .service-item p {
+    font-size: 1rem;
+    color: var(--light-gray);
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .service-item {
+      width: 90%;
+    }
+  }
+  
+  .assessment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #2e7192;
+  }
+  
+  .eda-summary {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .eda-summary h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .eda-summary p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .eda-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .eda-button:hover {
+    background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+    transform: scale(1.05);
+  }
+  
+  .eda-button:active {
+    transform: scale(0.95);
+  }
+  
