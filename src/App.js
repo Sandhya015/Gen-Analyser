@@ -7,7 +7,7 @@ import Assessment from "./pages/Assessment";
 import Learn from "./pages/Learn";
 import Login from "./pages/Login";
 import Support from "./pages/Support";
-
+//routing details
 const App = () => {
   return (
     <Router>
